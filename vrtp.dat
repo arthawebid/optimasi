@@ -1,0 +1,27 @@
+set NODES := 0 1 2 3 4 5 6 7 8 9 10 11 12 13;
+set VEHICLES := Elf Xenia;
+
+param demand :=
+  0  0   # Sekolah
+  1  2   # Taman Jimbaran
+  2  1   # TG 1
+  3  1   # TG 2
+  4  1   # TG 3
+  5  1   # TG 4
+  6  1   # TG 5
+  7  1   # TG 6
+  8  1   # TG 7
+  9  2   # TG 8
+ 10 1    # TG 9
+ 11 1    # TG 10
+ 12 1    # Puri Gading 1
+ 13 1; # Puri Gading 2
+
+param capacity :=
+  Elf   15
+  Xenia  5;
+
+# Isi matriks jarak (distance) disesuaikan dengan hasil kalkulasi antar koordinat
+param distance: 0 1 2 3 ... :=
+  0  0 3200 2800 ...
+  1  3200 0 1200 ... ;

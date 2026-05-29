@@ -6,7 +6,7 @@
  
  install modul
  pip install streamlit amplpy pandas numpy folium streamlit-folium 
- python -m amplpy.modules install highs cbc gurobi
+ python -m amplpy.modules install highs cbc gurobi  
  pip install -r requirements.txt
 
  buat daftar modul

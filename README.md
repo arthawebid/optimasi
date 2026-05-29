@@ -8,7 +8,7 @@
  pip install -r requirements.txt
 
  buat daftar modul
- pip freeze > requirements.txt
+ pip freeze > requirements.txt  
  python -m amplpy.modules install highs cbc gurobi
 
 streamlit run angkutan2.py --server.port 8899

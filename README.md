@@ -117,10 +117,8 @@ $$
 ### 2. Keseimbangan flow (in = out)
 
 $$
-\sum_{j \in N, j \neq i} x_{ijv}
-=
-\sum_{j \in N, j \neq i} x_{jiv},
-\quad \forall i \in N, \forall v \in V
+\sum_{j \in N, j \neq i} x_{ijv}=
+\sum_{j \in N, j \neq i} x_{jiv},\quad \forall i \in N, \forall v \in V
 $$
 
 ---
@@ -146,7 +144,10 @@ $$
 
 ### 5. Subtour Elimination (MTZ)
 
-$u_i - u_j + |N| \cdot x_{ijv} \le |N| - 1$
+$$
+u_{iv} - u_{jv} + |N| \cdot x_{ijv} \le |N| - 1,
+\quad \forall i \neq j,\ i,j \in N \setminus \{0\},\ v \in V
+$$
 
 👉 memastikan tidak ada rute kecil yang tidak kembali ke depot
 
